@@ -3,8 +3,8 @@ import {
   List,
   Datagrid,
   TextField,
-  /*   EditButton,
-  DeleteButton, */
+  EditButton,
+  DeleteButton,
 } from 'react-admin';
 
 const NotesList = (props) => {
@@ -13,8 +13,8 @@ const NotesList = (props) => {
       <Datagrid>
         <TextField source="id" />
         <TextField source="text" />
-        {/* <EditButton basePath="/notes" />
-        <DeleteButton basePath="/notes" /> */}
+        <EditButton label="Edit" basePath="/notes" />
+        <DeleteButton label="Delete" basePath="/notes" />
       </Datagrid>
     </List>
   );
